@@ -12,10 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var currentUser: User?
 
-
+    func loadUser(completion: ((result: User) -> Void)?) {
+        UsersProvider.getUser({ user in
+            
+            self.currentUser = user
+            
+            if (completion != nil) {
+                completion!(result: user!)
+            }
+        })
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.loadUser(nil)
+        
         return true
     }
 

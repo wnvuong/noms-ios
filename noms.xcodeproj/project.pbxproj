@@ -8,13 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		BE3506581D39D1ED00B1753C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3506571D39D1ED00B1753C /* AppDelegate.swift */; };
-		BE35065A1D39D1ED00B1753C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3506591D39D1ED00B1753C /* FirstViewController.swift */; };
-		BE35065C1D39D1ED00B1753C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35065B1D39D1ED00B1753C /* SecondViewController.swift */; };
 		BE35065F1D39D1ED00B1753C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE35065D1D39D1ED00B1753C /* Main.storyboard */; };
-		BE3506611D39D1ED00B1753C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3506601D39D1ED00B1753C /* Assets.xcassets */; };
 		BE3506641D39D1ED00B1753C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3506621D39D1ED00B1753C /* LaunchScreen.storyboard */; };
 		BE35066F1D39D1ED00B1753C /* nomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35066E1D39D1ED00B1753C /* nomsTests.swift */; };
 		BE35067A1D39D1ED00B1753C /* nomsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3506791D39D1ED00B1753C /* nomsUITests.swift */; };
+		BE59088F1D44399C008A226F /* AddToListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE59088E1D44399C008A226F /* AddToListTableViewCell.swift */; };
+		BE5908911D44837A008A226F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5908901D44837A008A226F /* CoreLocation.framework */; };
+		BE740C501D40708800C03B5C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE740C4F1D40708800C03B5C /* SettingsViewController.swift */; };
+		BE8A86241D3B243A00DF95C1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8A86231D3B243A00DF95C1 /* RestaurantTableViewCell.swift */; };
+		BE8A86261D3B293100DF95C1 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8A86251D3B293100DF95C1 /* RestaurantsTableViewController.swift */; };
+		BEC49A971D42C24700210C2C /* RestaurantsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49A961D42C24700210C2C /* RestaurantsProvider.swift */; };
+		BEC49A991D42C38D00210C2C /* RestaurantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49A981D42C38D00210C2C /* RestaurantsAPI.swift */; };
+		BEC49A9B1D42C41000210C2C /* UsersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49A9A1D42C41000210C2C /* UsersAPI.swift */; };
+		BEC49A9D1D42C5B700210C2C /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49A9C1D42C5B700210C2C /* UsersProvider.swift */; };
+		BEC49AA11D42C64800210C2C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AA01D42C64800210C2C /* User.swift */; };
+		BEC49AA61D42D72300210C2C /* NomsListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AA51D42D72300210C2C /* NomsListsTableViewController.swift */; };
+		BEC49AA91D42D7AA00210C2C /* NomsListsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AA81D42D7AA00210C2C /* NomsListsProvider.swift */; };
+		BEC49AAB1D42D7BA00210C2C /* NomsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AAA1D42D7BA00210C2C /* NomsList.swift */; };
+		BEC49AAD1D42F6D600210C2C /* NomsListsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AAC1D42F6D600210C2C /* NomsListsAPI.swift */; };
+		BEC49AAF1D43057300210C2C /* NomsLIstsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AAE1D43057300210C2C /* NomsLIstsTableViewCell.swift */; };
+		BEC49AB11D4309C700210C2C /* SingleNomsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AB01D4309C700210C2C /* SingleNomsListTableViewController.swift */; };
+		BEC49AB31D430A2700210C2C /* SingleNomsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AB21D430A2700210C2C /* SingleNomsListTableViewCell.swift */; };
+		BEC49AB51D430E6900210C2C /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AB41D430E6900210C2C /* RestaurantDetailViewController.swift */; };
+		BEC49AB71D44249F00210C2C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AB61D44249F00210C2C /* UIViewExtensions.swift */; };
+		BEC49ABA1D4425ED00210C2C /* NomsBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49AB91D4425ED00210C2C /* NomsBaseButton.swift */; };
+		BEC49ABC1D442D5900210C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC49ABB1D442D5900210C2C /* Assets.xcassets */; };
+		BECD918F1D442E7100E5F2B3 /* AddToListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD918E1D442E7100E5F2B3 /* AddToListViewController.swift */; };
+		BEE4E4471D39DAB00075C553 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4E4461D39DAB00075C553 /* Restaurant.swift */; };
+		BEE4E44B1D39E02E0075C553 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4E44A1D39E02E0075C553 /* APIHelper.swift */; };
+		BEE4E44D1D39E55E0075C553 /* DataProviderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4E44C1D39E55E0075C553 /* DataProviderHelper.swift */; };
+		CC083605942F4038781BE2ED /* Pods_noms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E54D246D9B32C900FC42C2 /* Pods_noms.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2D98ED1D64A07301452BC2 /* Pods-noms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-noms/Pods-noms.debug.xcconfig"; sourceTree = "<group>"; };
+		18E54D246D9B32C900FC42C2 /* Pods_noms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3506541D39D1ED00B1753C /* noms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3506571D39D1ED00B1753C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE3506591D39D1ED00B1753C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BE35065B1D39D1ED00B1753C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BE35065E1D39D1ED00B1753C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE3506601D39D1ED00B1753C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3506631D39D1ED00B1753C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3506651D39D1ED00B1753C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE35066A1D39D1ED00B1753C /* nomsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nomsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +71,32 @@
 		BE3506751D39D1ED00B1753C /* nomsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nomsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3506791D39D1ED00B1753C /* nomsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nomsUITests.swift; sourceTree = "<group>"; };
 		BE35067B1D39D1ED00B1753C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE59088E1D44399C008A226F /* AddToListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToListTableViewCell.swift; sourceTree = "<group>"; };
+		BE5908901D44837A008A226F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BE740C4F1D40708800C03B5C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BE8A86231D3B243A00DF95C1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		BE8A86251D3B293100DF95C1 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		BEC49A961D42C24700210C2C /* RestaurantsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsProvider.swift; sourceTree = "<group>"; };
+		BEC49A981D42C38D00210C2C /* RestaurantsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsAPI.swift; sourceTree = "<group>"; };
+		BEC49A9A1D42C41000210C2C /* UsersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersAPI.swift; sourceTree = "<group>"; };
+		BEC49A9C1D42C5B700210C2C /* UsersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersProvider.swift; sourceTree = "<group>"; };
+		BEC49AA01D42C64800210C2C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BEC49AA51D42D72300210C2C /* NomsListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsListsTableViewController.swift; sourceTree = "<group>"; };
+		BEC49AA81D42D7AA00210C2C /* NomsListsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsListsProvider.swift; sourceTree = "<group>"; };
+		BEC49AAA1D42D7BA00210C2C /* NomsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsList.swift; sourceTree = "<group>"; };
+		BEC49AAC1D42F6D600210C2C /* NomsListsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsListsAPI.swift; sourceTree = "<group>"; };
+		BEC49AAE1D43057300210C2C /* NomsLIstsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsLIstsTableViewCell.swift; sourceTree = "<group>"; };
+		BEC49AB01D4309C700210C2C /* SingleNomsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleNomsListTableViewController.swift; sourceTree = "<group>"; };
+		BEC49AB21D430A2700210C2C /* SingleNomsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleNomsListTableViewCell.swift; sourceTree = "<group>"; };
+		BEC49AB41D430E6900210C2C /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		BEC49AB61D44249F00210C2C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		BEC49AB91D4425ED00210C2C /* NomsBaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsBaseButton.swift; sourceTree = "<group>"; };
+		BEC49ABB1D442D5900210C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BECD918E1D442E7100E5F2B3 /* AddToListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToListViewController.swift; sourceTree = "<group>"; };
+		BEE4E4461D39DAB00075C553 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		BEE4E44A1D39E02E0075C553 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		BEE4E44C1D39E55E0075C553 /* DataProviderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderHelper.swift; sourceTree = "<group>"; };
+		C0CA0D2ECC972ED806695DB6 /* Pods-noms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noms.release.xcconfig"; path = "Pods/Target Support Files/Pods-noms/Pods-noms.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5908911D44837A008A226F /* CoreLocation.framework in Frameworks */,
+				CC083605942F4038781BE2ED /* Pods_noms.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07AF4E48D752385280548F16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B2D98ED1D64A07301452BC2 /* Pods-noms.debug.xcconfig */,
+				C0CA0D2ECC972ED806695DB6 /* Pods-noms.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BE35064B1D39D1ED00B1753C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +142,8 @@
 				BE35066D1D39D1ED00B1753C /* nomsTests */,
 				BE3506781D39D1ED00B1753C /* nomsUITests */,
 				BE3506551D39D1ED00B1753C /* Products */,
+				07AF4E48D752385280548F16 /* Pods */,
+				FB2D0650A0FAD8A3C96A4E52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +160,13 @@
 		BE3506561D39D1ED00B1753C /* noms */ = {
 			isa = PBXGroup;
 			children = (
+				BEE4E43E1D39D82E0075C553 /* Framedation */,
+				BEE4E4401D39D8480075C553 /* Storyboards */,
+				BEE4E4411D39D8530075C553 /* UI */,
+				BEE4E43F1D39D8430075C553 /* Lib */,
+				BEE4E4421D39D85A0075C553 /* Resources */,
 				BE3506571D39D1ED00B1753C /* AppDelegate.swift */,
-				BE3506591D39D1ED00B1753C /* FirstViewController.swift */,
-				BE35065B1D39D1ED00B1753C /* SecondViewController.swift */,
-				BE35065D1D39D1ED00B1753C /* Main.storyboard */,
-				BE3506601D39D1ED00B1753C /* Assets.xcassets */,
-				BE3506621D39D1ED00B1753C /* LaunchScreen.storyboard */,
+				BEC49ABB1D442D5900210C2C /* Assets.xcassets */,
 				BE3506651D39D1ED00B1753C /* Info.plist */,
 			);
 			path = noms;
@@ -128,6 +190,155 @@
 			path = nomsUITests;
 			sourceTree = "<group>";
 		};
+		BE740C4E1D40707400C03B5C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BE740C4F1D40708800C03B5C /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		BE8A86221D3B23C100DF95C1 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				BE8A86251D3B293100DF95C1 /* RestaurantsTableViewController.swift */,
+				BE8A86231D3B243A00DF95C1 /* RestaurantTableViewCell.swift */,
+				BEC49AB41D430E6900210C2C /* RestaurantDetailViewController.swift */,
+				BECD918E1D442E7100E5F2B3 /* AddToListViewController.swift */,
+				BE59088E1D44399C008A226F /* AddToListTableViewCell.swift */,
+			);
+			name = Restaurants;
+			sourceTree = "<group>";
+		};
+		BEC49A9E1D42C62300210C2C /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				BEC49AA01D42C64800210C2C /* User.swift */,
+				BEC49A9C1D42C5B700210C2C /* UsersProvider.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		BEC49A9F1D42C62700210C2C /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				BEE4E4461D39DAB00075C553 /* Restaurant.swift */,
+				BEC49A961D42C24700210C2C /* RestaurantsProvider.swift */,
+			);
+			name = Restaurants;
+			sourceTree = "<group>";
+		};
+		BEC49AA21D42D1DE00210C2C /* NomsLists */ = {
+			isa = PBXGroup;
+			children = (
+				BEC49AA51D42D72300210C2C /* NomsListsTableViewController.swift */,
+				BEC49AAE1D43057300210C2C /* NomsLIstsTableViewCell.swift */,
+				BEC49AB01D4309C700210C2C /* SingleNomsListTableViewController.swift */,
+				BEC49AB21D430A2700210C2C /* SingleNomsListTableViewCell.swift */,
+			);
+			name = NomsLists;
+			sourceTree = "<group>";
+		};
+		BEC49AA71D42D79D00210C2C /* NomsLists */ = {
+			isa = PBXGroup;
+			children = (
+				BEC49AAA1D42D7BA00210C2C /* NomsList.swift */,
+				BEC49AA81D42D7AA00210C2C /* NomsListsProvider.swift */,
+			);
+			name = NomsLists;
+			sourceTree = "<group>";
+		};
+		BEC49AB81D4425BF00210C2C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BEC49AB91D4425ED00210C2C /* NomsBaseButton.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		BEE4E43E1D39D82E0075C553 /* Framedation */ = {
+			isa = PBXGroup;
+			children = (
+				BEE4E4431D39D9470075C553 /* Data */,
+				BEE4E4441D39D94E0075C553 /* Network */,
+				BEE4E4451D39D9540075C553 /* Util */,
+			);
+			name = Framedation;
+			sourceTree = "<group>";
+		};
+		BEE4E43F1D39D8430075C553 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		BEE4E4401D39D8480075C553 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BE35065D1D39D1ED00B1753C /* Main.storyboard */,
+				BE3506621D39D1ED00B1753C /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BEE4E4411D39D8530075C553 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BEC49AA21D42D1DE00210C2C /* NomsLists */,
+				BE740C4E1D40707400C03B5C /* Settings */,
+				BE8A86221D3B23C100DF95C1 /* Restaurants */,
+				BEC49AB81D4425BF00210C2C /* Util */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		BEE4E4421D39D85A0075C553 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BEE4E4431D39D9470075C553 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BEC49AA71D42D79D00210C2C /* NomsLists */,
+				BEC49A9F1D42C62700210C2C /* Restaurants */,
+				BEC49A9E1D42C62300210C2C /* Users */,
+				BEE4E44C1D39E55E0075C553 /* DataProviderHelper.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		BEE4E4441D39D94E0075C553 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BEE4E44A1D39E02E0075C553 /* APIHelper.swift */,
+				BEC49A981D42C38D00210C2C /* RestaurantsAPI.swift */,
+				BEC49A9A1D42C41000210C2C /* UsersAPI.swift */,
+				BEC49AAC1D42F6D600210C2C /* NomsListsAPI.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		BEE4E4451D39D9540075C553 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BEC49AB61D44249F00210C2C /* UIViewExtensions.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		FB2D0650A0FAD8A3C96A4E52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE5908901D44837A008A226F /* CoreLocation.framework */,
+				18E54D246D9B32C900FC42C2 /* Pods_noms.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +346,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE35067E1D39D1ED00B1753C /* Build configuration list for PBXNativeTarget "noms" */;
 			buildPhases = (
+				5F4B3FDBCEECABB368CF2956 /* [CP] Check Pods Manifest.lock */,
 				BE3506501D39D1ED00B1753C /* Sources */,
 				BE3506511D39D1ED00B1753C /* Frameworks */,
 				BE3506521D39D1ED00B1753C /* Resources */,
+				76C8E4AB6266F9F6A7C14CCC /* [CP] Embed Pods Frameworks */,
+				B97D6C39EF6E393C7E3A8793 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,7 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE3506641D39D1ED00B1753C /* LaunchScreen.storyboard in Resources */,
-				BE3506611D39D1ED00B1753C /* Assets.xcassets in Resources */,
+				BEC49ABC1D442D5900210C2C /* Assets.xcassets in Resources */,
 				BE35065F1D39D1ED00B1753C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,14 +471,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F4B3FDBCEECABB368CF2956 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76C8E4AB6266F9F6A7C14CCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-noms/Pods-noms-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B97D6C39EF6E393C7E3A8793 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-noms/Pods-noms-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE3506501D39D1ED00B1753C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE35065C1D39D1ED00B1753C /* SecondViewController.swift in Sources */,
+				BEC49AB11D4309C700210C2C /* SingleNomsListTableViewController.swift in Sources */,
+				BEC49AB71D44249F00210C2C /* UIViewExtensions.swift in Sources */,
+				BEE4E44D1D39E55E0075C553 /* DataProviderHelper.swift in Sources */,
+				BEC49AB51D430E6900210C2C /* RestaurantDetailViewController.swift in Sources */,
+				BEC49AAF1D43057300210C2C /* NomsLIstsTableViewCell.swift in Sources */,
+				BEC49AA91D42D7AA00210C2C /* NomsListsProvider.swift in Sources */,
+				BEE4E4471D39DAB00075C553 /* Restaurant.swift in Sources */,
+				BEC49AB31D430A2700210C2C /* SingleNomsListTableViewCell.swift in Sources */,
+				BEC49AAD1D42F6D600210C2C /* NomsListsAPI.swift in Sources */,
+				BEC49ABA1D4425ED00210C2C /* NomsBaseButton.swift in Sources */,
+				BEC49A991D42C38D00210C2C /* RestaurantsAPI.swift in Sources */,
+				BE740C501D40708800C03B5C /* SettingsViewController.swift in Sources */,
+				BE8A86261D3B293100DF95C1 /* RestaurantsTableViewController.swift in Sources */,
+				BEC49AAB1D42D7BA00210C2C /* NomsList.swift in Sources */,
+				BEE4E44B1D39E02E0075C553 /* APIHelper.swift in Sources */,
 				BE3506581D39D1ED00B1753C /* AppDelegate.swift in Sources */,
-				BE35065A1D39D1ED00B1753C /* FirstViewController.swift in Sources */,
+				BEC49AA61D42D72300210C2C /* NomsListsTableViewController.swift in Sources */,
+				BEC49A9B1D42C41000210C2C /* UsersAPI.swift in Sources */,
+				BE59088F1D44399C008A226F /* AddToListTableViewCell.swift in Sources */,
+				BECD918F1D442E7100E5F2B3 /* AddToListViewController.swift in Sources */,
+				BEC49AA11D42C64800210C2C /* User.swift in Sources */,
+				BEC49A9D1D42C5B700210C2C /* UsersProvider.swift in Sources */,
+				BE8A86241D3B243A00DF95C1 /* RestaurantTableViewCell.swift in Sources */,
+				BEC49A971D42C24700210C2C /* RestaurantsProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,9 +687,11 @@
 		};
 		BE35067F1D39D1ED00B1753C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2D98ED1D64A07301452BC2 /* Pods-noms.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = noms/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamvuong.noms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,9 +700,11 @@
 		};
 		BE3506801D39D1ED00B1753C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0CA0D2ECC972ED806695DB6 /* Pods-noms.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = noms/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamvuong.noms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,6 +776,7 @@
 				BE3506801D39D1ED00B1753C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE3506811D39D1EE00B1753C /* Build configuration list for PBXNativeTarget "nomsTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +785,7 @@
 				BE3506831D39D1EE00B1753C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE3506841D39D1EE00B1753C /* Build configuration list for PBXNativeTarget "nomsUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +794,7 @@
 				BE3506861D39D1EE00B1753C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
