@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "noms/RestaurantsProvider.swift"
+            timestampString = "491088317.802947"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getRestaurant(_:completion:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static noms.RestaurantsProvider.(getRestaurant (Swift.String, completion : (Swift.Optional&lt;noms.Restaurant&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "noms"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Will/Development/noms/noms/RestaurantsProvider.swift"
+                  timestampString = "491088318.008089"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static noms.RestaurantsProvider.(getRestaurant (Swift.String, completion : (Swift.Optional&lt;noms.Restaurant&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "noms"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Will/Development/noms/noms/RestaurantsProvider.swift"
+                  timestampString = "491088318.008267"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -14,4 +14,10 @@ class RestaurantsAPI {
             completion(result)
         })
     }
+    
+    static func getRestaurant(id: String, completion: (AnyObject?) -> Void) {
+        APIHelper.get("/restaurants/" + id, completion: { result in
+            completion(result)
+        })
+    }
 }

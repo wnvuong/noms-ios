@@ -14,13 +14,12 @@ class SingleNomsListTableViewController: UITableViewController {
     // MARK: Properties
     var nomsListId: String?
     var nomsList: NomsList?
+    var loadedRestaurants: [String: Restaurant] = [String: Restaurant]()
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.fetchNomsList()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +34,11 @@ class SingleNomsListTableViewController: UITableViewController {
         NomsListsProvider.getNomsList(nomsListId!, completion: { result in
             if let resultNomsList = result {
                 self.nomsList = resultNomsList
+                for restaurantId in self.nomsList!.restaurantIds {
+                    RestaurantsProvider.getRestaurant(restaurantId, completion: { result in
+                        self.loadedRestaurants[restaurantId] = result
+                    })
+                }
                 self.tableView.reloadData()
             }
         })
@@ -59,7 +63,22 @@ class SingleNomsListTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! SingleNomsListTableViewCell
             
             let restaurantId = currNomsList.restaurantIds[indexPath.row]
-            cell.nameLabel.text = restaurantId
+            
+            
+            if self.loadedRestaurants[restaurantId] != nil {
+                cell.nameLabel.text = self.loadedRestaurants[restaurantId]?.name
+            } else {
+//                cell.nameLabel.text = restaurantId
+                RestaurantsProvider.getRestaurant(restaurantId, completion: { result in
+                    self.loadedRestaurants[restaurantId] = result
+                    if result != nil {
+//                        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                        cell.nameLabel.text = result!.name
+                    }
+                    
+                    
+                })
+            }
             
             return cell
         } else {

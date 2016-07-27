@@ -21,11 +21,21 @@ class RestaurantsProvider {
                         latitude: coordinate["latitude"] as! Double,
                         longitude: coordinate["longitude"] as! Double)!
                 })
-                completion(restaurants)
-            } else {
-                completion(nil)
+                return completion(restaurants)
             }
-            
+            return completion(nil)
+        })
+    }
+    
+    static func getRestaurant(id: String, completion: (Restaurant?) -> Void) {
+        RestaurantsAPI.getRestaurant(id, completion: { rawData in
+            if let rawRestaurants = DataProviderHelper.getRawResults(rawData) {
+                let rawRestaurant = rawRestaurants[0]
+                if let coordinate: [String: Double] = rawRestaurant["coordinate"] as? [String: Double] {
+                    return completion(Restaurant(id: rawRestaurant["id"] as! String, name: rawRestaurant["name"] as! String, rating: rawRestaurant["rating"] as! Double, latitude: coordinate["latitude"]!, longitude: coordinate["longitude"]!))
+                }
+            }
+            return completion(nil)
         })
     }
 }
