@@ -35,4 +35,10 @@ class NomsListsAPI {
             completion(result)
         })
     }
+    
+    static func deleteList(id: String, completion: (AnyObject)? -> Void) {
+        APIHelper.delete("/nomslists/" + id, completion: { result in
+            completion(result)
+        })
+    }
 }

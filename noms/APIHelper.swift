@@ -53,5 +53,15 @@ class APIHelper {
                 completion(rawResult)
             })
     }
+    
+    static func delete(urlPath: String, completion: (AnyObject?) -> Void) {
+    
+        Alamofire.request(.DELETE, APIHelper.baseUrl + urlPath)
+            .responseJSON(completionHandler: { response in
+                let rawResult = APIHelper.getRawResult(response)
+                
+                completion(rawResult)
+            })
+    }
 
 }

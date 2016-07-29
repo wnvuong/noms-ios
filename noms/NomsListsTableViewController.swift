@@ -106,6 +106,8 @@ class NomsListsTableViewController: UITableViewController {
             if let destination = segue.destinationViewController as? SingleNomsListTableViewController {
                 if self.tableView.indexPathForSelectedRow != nil {
                     
+                    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
+
                     let selectedNomsList = self.nomsLists[self.tableView.indexPathForSelectedRow!.row]
                     
                     destination.nomsListId = selectedNomsList.id

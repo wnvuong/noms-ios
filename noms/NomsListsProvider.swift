@@ -44,4 +44,23 @@ class NomsListsProvider {
             }
         })
     }
+    
+    static func updateNomsList(id: String, toAdd: [String]?, toRemove: [String]?, completion: (Bool) -> Void) {
+        NomsListsAPI.updateList(id, toAdd: toAdd, toRemove: toRemove, completion: { rawData in
+            if let rawResult = DataProviderHelper.getRawResults(rawData) {
+                let status = rawResult[0]
+                return completion(status["ok"] as! Double == 1)
+            }
+            
+        })
+    }
+    
+    static func deleteNomsList(id: String, completion: (Bool) -> Void) {
+        NomsListsAPI.deleteList(id, completion: { rawData in
+            if let rawResult = DataProviderHelper.getRawResults(rawData) {
+                let status = rawResult[0]
+                return completion(status["ok"] as! Double == 1)
+            }
+        })
+    }
 }

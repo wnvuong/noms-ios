@@ -86,7 +86,7 @@ class AddToListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let nomsList = self.nomsLists[indexPath.row]
         
-        NomsListsAPI.updateList(nomsList.id, toAdd: [restaurantToAdd.id], toRemove: nil, completion: { result in
+        NomsListsProvider.updateNomsList(nomsList.id, toAdd: [restaurantToAdd.id], toRemove: nil, completion: { result in
             self.performSegueWithIdentifier("AddToListUnwind", sender: self)
         })
         

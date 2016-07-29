@@ -34,11 +34,11 @@ class SingleNomsListTableViewController: UITableViewController {
         NomsListsProvider.getNomsList(nomsListId!, completion: { result in
             if let resultNomsList = result {
                 self.nomsList = resultNomsList
-                for restaurantId in self.nomsList!.restaurantIds {
-                    RestaurantsProvider.getRestaurant(restaurantId, completion: { result in
-                        self.loadedRestaurants[restaurantId] = result
-                    })
-                }
+//                for restaurantId in self.nomsList!.restaurantIds {
+//                    RestaurantsProvider.getRestaurant(restaurantId, completion: { result in
+//                        self.loadedRestaurants[restaurantId] = result
+//                    })
+//                }
                 self.tableView.reloadData()
             }
         })
@@ -64,19 +64,14 @@ class SingleNomsListTableViewController: UITableViewController {
             
             let restaurantId = currNomsList.restaurantIds[indexPath.row]
             
-            
             if self.loadedRestaurants[restaurantId] != nil {
                 cell.nameLabel.text = self.loadedRestaurants[restaurantId]?.name
             } else {
-//                cell.nameLabel.text = restaurantId
                 RestaurantsProvider.getRestaurant(restaurantId, completion: { result in
                     self.loadedRestaurants[restaurantId] = result
                     if result != nil {
-//                        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
                         cell.nameLabel.text = result!.name
                     }
-                    
-                    
                 })
             }
             
@@ -120,15 +115,38 @@ class SingleNomsListTableViewController: UITableViewController {
         return true
     }
     */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    @IBAction func deleteListClicked(sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: nil, message: "Do you want to delete this list?", preferredStyle: .Alert)
+        
+        
+        alertController.addAction(UIAlertAction(title: "Delete", style: .Destructive, handler:  { action in
+            NomsListsProvider.deleteNomsList(self.nomsListId!, completion: { success in
+                print("deleted")
+            })
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
-    */
 
+    // MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SavedRestaurantSegue" {
+            if let destination = segue.destinationViewController as? SavedRestaurantDetailViewController {
+                let selectedRow = self.tableView.indexPathForSelectedRow!.row
+                let selectedRestaurantId: String = self.nomsList!.restaurantIds[selectedRow]
+                
+                destination.savedRestaurant = self.loadedRestaurants[selectedRestaurantId]
+                destination.nomsListId = self.nomsListId!
+            }
+        }
+    }
+    
+    @IBAction func unwindToRestaurantDetailViewController(segue: UIStoryboardSegue) {
+        if segue.sourceViewController is SavedRestaurantDetailViewController {
+
+        }
+    }
 }

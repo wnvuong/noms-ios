@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9217077A1D486604009DE367 /* SavedRestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921707791D486604009DE367 /* SavedRestaurantDetailViewController.swift */; };
 		BE3506581D39D1ED00B1753C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3506571D39D1ED00B1753C /* AppDelegate.swift */; };
 		BE35065F1D39D1ED00B1753C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE35065D1D39D1ED00B1753C /* Main.storyboard */; };
 		BE3506641D39D1ED00B1753C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3506621D39D1ED00B1753C /* LaunchScreen.storyboard */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		0B2D98ED1D64A07301452BC2 /* Pods-noms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-noms/Pods-noms.debug.xcconfig"; sourceTree = "<group>"; };
 		18E54D246D9B32C900FC42C2 /* Pods_noms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		921707791D486604009DE367 /* SavedRestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		BE3506541D39D1ED00B1753C /* noms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3506571D39D1ED00B1753C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE35065E1D39D1ED00B1753C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				BEC49AAE1D43057300210C2C /* NomsLIstsTableViewCell.swift */,
 				BEC49AB01D4309C700210C2C /* SingleNomsListTableViewController.swift */,
 				BEC49AB21D430A2700210C2C /* SingleNomsListTableViewCell.swift */,
+				921707791D486604009DE367 /* SavedRestaurantDetailViewController.swift */,
 			);
 			name = NomsLists;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				BEC49AB11D4309C700210C2C /* SingleNomsListTableViewController.swift in Sources */,
 				BEC49AB71D44249F00210C2C /* UIViewExtensions.swift in Sources */,
 				BEE4E44D1D39E55E0075C553 /* DataProviderHelper.swift in Sources */,
+				9217077A1D486604009DE367 /* SavedRestaurantDetailViewController.swift in Sources */,
 				BEC49AB51D430E6900210C2C /* RestaurantDetailViewController.swift in Sources */,
 				BEC49AAF1D43057300210C2C /* NomsLIstsTableViewCell.swift in Sources */,
 				BEC49AA91D42D7AA00210C2C /* NomsListsProvider.swift in Sources */,

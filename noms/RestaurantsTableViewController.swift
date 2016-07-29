@@ -131,7 +131,7 @@ class RestaurantsTableViewController: UITableViewController, CLLocationManagerDe
                     
                     let selectedRestaurant = self.restaurants[self.tableView.indexPathForSelectedRow!.row]
                     
-                    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
+                    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
 
                     destination.navigationItem.title = selectedRestaurant.name
                     destination.restaurant = selectedRestaurant
